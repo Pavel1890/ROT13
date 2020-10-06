@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>ROT13</title>
+  </head>
+  <body>
+    <div class="wrapper_table-ROT13">
+      <header class="header">
+        <p class="header_title">ROT13 Переводчик</p>
+      </header>
+      <div class="wrapper_input_field">
+        <div class="wrapper_input_field_text">
+          <p class="head_input_field_text">Английский</p>
+          <textarea
+            class="input_field_text"
+            id="input_field_text"
+            maxlength="1000"
+          >
+          </textarea>
+        </div>
+        <div class="arrow_rot13">
+          <p id="arrow_rot13">- - ></p>
+        </div>
+        <div class="wrapper_input_field_rot13">
+          <p class="head_input_field_rot13">ROT13</p>
+          <textarea
+            class="input_field_rot13"
+            id="input_field_rot13"
+            maxlength="1000"
+          >
+          </textarea>
+        </div>
+      </div>
+      <footer class="footer">
+        <button class="button_push" id="btnPush">Зашифровать</button>
+        <button class="button_restart" id="btnReboot">Новый перевод</button>
+      </footer>
+    </div>
+
+    <script src="/code.js"></script>
+  </body>
+</html>
